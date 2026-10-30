@@ -24,3 +24,39 @@ olist-ecommerce-analytics/
 ├── docs/
 │   └── er_diagram.png               # Relational database schema diagram
 └── README.md
+
+Data Architecture & Entity Relationship Diagram
+The database is built on a relational star/snowflake schema linking 9 core tables:
+
+Core Entities: customers, orders, order_items, sellers, products
+
+Transactional Attributes: order_payments, order_reviews
+
+Auxiliary Data: geolocation, product_category_name_translation
+
+Database Implementation (PostgreSQL)
+Schema Definition: Configured primary keys, foreign key constraints, and appropriate data types (VARCHAR, TIMESTAMP, NUMERIC(10,2)).
+
+Data Integrity Checks: Audit routines designed to handle missing timestamps, duplicate geographic postal codes, and unmapped product categories.
+
+Environment: PostgreSQL 16 via pgAdmin 4.
+
+Project Roadmap
+[x] Database configuration and relational table mapping
+
+[x] Schema DDL setup and foreign key relationships
+
+[ ] Comprehensive data quality and hygiene audit scripts
+
+[ ] Exploratory and advanced SQL analysis (RFM segmentation, logistics delays, seller Pareto analysis)
+
+[ ] Python Exploratory Data Analysis (EDA) & distribution cross-validation
+
+[ ] Power BI interactive reporting dashboard
+
+[ ] Strategic business takeaways & recommendations
+
+Author
+Business Analytics Project
+
+Documentation and analysis scripts maintained as part of an end-to-end analytics portfolio.
