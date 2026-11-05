@@ -58,6 +58,6 @@ Project Roadmap
 [ ] Strategic business takeaways & recommendations
 
 Author
-Business Analytics Project
+Chandan V.
 
 Documentation and analysis scripts maintained as part of an end-to-end analytics portfolio.
