@@ -24,6 +24,7 @@ olist-ecommerce-analytics/
 ├── docs/
 │   └── er_diagram.png               # Relational database schema diagram
 └── README.md
+```
 
 Data Architecture & Entity Relationship Diagram
 The database is built on a relational star/snowflake schema linking 9 core tables:
